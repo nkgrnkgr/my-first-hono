@@ -2,7 +2,9 @@
   "name": "first-hono",
   "type": "module",
   "scripts": {
-    "dev": "tsx watch src/index.ts"
+    "dev": "tsx watch src/index.ts",
+    "lint": "biome check src",
+    "format": "biome check --write src"
   },
   "dependencies": {
     "@hono/node-server": "^1.13.7",
